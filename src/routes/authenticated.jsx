@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "../page/dashboard";
 import Settings from "../page/settings";
+import Users from "../page/users";
 
 export default createBrowserRouter([
     {
@@ -14,5 +15,9 @@ export default createBrowserRouter([
     {
         path: "/settings",
         element: <Settings />,
+    },
+    {
+        path: "/users",
+        element: <Users />,
     },
 ]);

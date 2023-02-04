@@ -16,7 +16,7 @@ export default function Login() {
         const password = e.target.password.value;
 
         axios
-            .post("http://localhost:8000/api/v1/login", {
+            .post(`${import.meta.env.VITE_API_URL}api/v1/login`, {
                 email,
                 password,
             })
