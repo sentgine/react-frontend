@@ -32,6 +32,9 @@ export default function Login() {
             });
     };
 
+    /**
+     * Redirect the user to the dashboard if logged in
+     */
     useEffect(() => {
         if (isLoggedIn) {
             window.location.href = "/dashboard";

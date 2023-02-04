@@ -38,18 +38,30 @@ export default function index() {
         }
     };
 
+    /**
+     * Handle the previous page
+     */
     const previousPage = async () => {
         await fetchUsers(links.prev);
     };
 
+    /**
+     * Handle the next page
+     */
     const nextPage = async () => {
         await fetchUsers(links.next);
     };
 
+    /**
+     * Handle the first page
+     */
     const firstPage = async () => {
         await fetchUsers(links.first);
     };
 
+    /**
+     * Handle the last page
+     */
     const lastPage = async () => {
         await fetchUsers(links.last);
     };
